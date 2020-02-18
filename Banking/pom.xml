@@ -4,13 +4,12 @@
   <artifactId>Banking</artifactId>
   <version>ver1</version>
   <packaging>war</packaging>
-  
-  <properties>
-  <spring-version>5.1.13.RELEASE</spring-version>
-  <hibernate.version>4.3.6.Final</hibernate.version>
-  </properties>
- 
-  <dependencies>
+ <properties>
+		<spring-version>5.1.13.RELEASE</spring-version>
+		<hibernate-version>4.3.6.Final</hibernate-version>
+		<jackson-version>2.10.0</jackson-version>
+	</properties>
+	<dependencies>
   <dependency>
   <groupId>org.springframework</groupId>
    <artifactId>spring-context</artifactId>
@@ -50,12 +49,17 @@
 <dependency>
 <groupId>org.hibernate</groupId>
 <artifactId>hibernate-entitymanager</artifactId>
-<version>${hibernate.version}</version>
+<version>${hibernate-version}</version>
 </dependency>
 <dependency>
 	<groupId>com.oracle.ojdbc</groupId>
     <artifactId>ojdbc8</artifactId>
     <version>19.3.0.0</version>
+</dependency>
+<dependency>
+	<groupId>com.fasterxml.jackson.core</groupId>
+    <artifactId>jackson-databind</artifactId>
+    <version>${jackson-version}</version>
 </dependency>
   </dependencies>
   <build>
