@@ -1,5 +1,6 @@
 package com.lti.banking.core.entities;
 
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -24,6 +25,7 @@ public class PayeeDetail {
 	@Column(name="IFSC")
 	private String iFSC;
 	
+
 	public PayeeDetail() {
 		super();
 	}

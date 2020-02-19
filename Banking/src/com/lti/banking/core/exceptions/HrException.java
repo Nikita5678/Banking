@@ -1,4 +1,6 @@
+
 package com.lti.banking.core.exceptions;
+
 
 public class HrException extends Exception {
 
